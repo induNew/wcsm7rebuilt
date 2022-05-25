@@ -46,6 +46,8 @@ public class FileUploadPopup {
 		
 		File abs = new File("./autoitscripts/fu1.exe");
 		String abspath = abs.getAbsolutePath();
+		
+		
 		Runtime.getRuntime().exec(abspath);
 		Thread.sleep(4000);
 		Runtime.getRuntime().exec(abspath);
