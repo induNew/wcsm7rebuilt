@@ -15,13 +15,13 @@ public abstract class ReadExcelData {
 	
 	public static void main(String[] args) throws EncryptedDocumentException, IOException {
 		
-		FileInputStream fis = new FileInputStream("./data/TestData.xlsx");
-		Workbook wb = WorkbookFactory.create(fis);
-		Sheet sh = wb.getSheet("Sheet1");
-		Row row = sh.getRow(6);
-		Cell cell = row.getCell(1);
-		String data = cell.getStringCellValue();
-		System.out.println(data);
+		FileInputStream fis = new FileInputStream("./data/TestData.xlsx");//provide the path of the file
+		Workbook wb = WorkbookFactory.create(fis);//make the file ready for read operation
+		Sheet sh = wb.getSheet("Sheet1");//get into the sheet
+		Row row = sh.getRow(6);//get the desired row
+		Cell cell = row.getCell(1);//get the desired col/cell
+		String data = cell.getStringCellValue();//read the data from that cell
+		System.out.println(data);//print the data
 	}
 
 }
