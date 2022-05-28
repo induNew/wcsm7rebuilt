@@ -14,7 +14,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 public class Flib {
 	
 	
-	public String readData(String excelPath,String sheetName,int rowcount,int cellCount) throws EncryptedDocumentException, IOException
+	public String readExcelData(String excelPath,String sheetName,int rowcount,int cellCount) throws EncryptedDocumentException, IOException
 	{
 		FileInputStream fis = new FileInputStream(excelPath);
 		Workbook wb = WorkbookFactory.create(fis);
@@ -24,5 +24,19 @@ public class Flib {
 		String data = cell.getStringCellValue();
 		return data;
 	}
+	
+	
+	public int getrowCount(String excelPath,String sheetName) throws EncryptedDocumentException, IOException
+	{
+		FileInputStream fis = new FileInputStream(excelPath);
+		Workbook wb = WorkbookFactory.create(fis);
+		Sheet sh = wb.getSheet(sheetName);
+		int rc = sh.getLastRowNum();
+		return rc;
+		
+	}
+	
+	
+	
 
 }
