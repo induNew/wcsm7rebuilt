@@ -13,7 +13,7 @@ public class BaseTest {
 	public void openBrowser() throws IOException
 	{
 		Flib flib = new Flib();
-		//read the data from property file (browser)1233
+		//read the data from property file (browser)12334
 		String browserValue = flib.readPropertyFile("./data/config.properties","browser");
 		//read the data from property file (url)
 		String url = flib.readPropertyFile("./data/config.properties", "url");
