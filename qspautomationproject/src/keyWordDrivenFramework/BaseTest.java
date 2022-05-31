@@ -7,20 +7,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class BaseTest {
-	WebDriver driver;
+public class BaseTest implements IAutoConstant {
+	static WebDriver driver;
 	//method to open the browsers
 	public void openBrowser() throws IOException
 	{
 		Flib flib = new Flib();
 		//read the data from property file (browser)12334
-		String browserValue = flib.readPropertyFile("./data/config.properties","browser");
+		String browserValue = flib.readPropertyFile(PROP_PATH,"browser");
 		//read the data from property file (url)
-		String url = flib.readPropertyFile("./data/config.properties", "url");
+		String url = flib.readPropertyFile(PROP_PATH, "url");
 		//use the value of browser
 		if(browserValue.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+			System.setProperty(CHROME_KEY,CHROME_VALUE);
 			driver=new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.get(url);
@@ -29,7 +29,7 @@ public class BaseTest {
 
 		else if(browserValue.equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "./drivers/geckodriver.exe");
+			System.setProperty(GECKO_KEY,GECKO_VALUE);
 			driver=new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.get(url);
