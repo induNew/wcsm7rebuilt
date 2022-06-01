@@ -12,7 +12,8 @@ public class ActiTimeInvalidLoginTest  extends BaseTest{
 		bt.openBrowser();
 		Thread.sleep(3000);
 		
-		Flib flib = new Flib();ne
+		Flib flib = new Flib();
+		
 		int rc = flib.getRowCount(EXCEL_PATH,"invalidcreds");
 		
 		for(int i=1;i<=rc;i++)
