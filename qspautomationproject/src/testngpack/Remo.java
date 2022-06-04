@@ -3,12 +3,12 @@ package testngpack;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-public class Demo {
+public class Remo {
 	
 	@Test
-	public void a()
+	public void b()
 	{
-		Reporter.log("demo class method",true);
+		Reporter.log("Remo class method",true);
 	}
 
 }
