@@ -1,43 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[login to actitime]]>
+      <![CDATA[14  thread id]]>
     </line>
     <line>
-      <![CDATA[Create contact]]>
+      <![CDATA[15  thread id]]>
     </line>
     <line>
-      <![CDATA[logout from  actitime]]>
+      <![CDATA[method1]]>
+    </line>
+    <line>
+      <![CDATA[method2]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63" started-at="2022-06-04T16:05:29 IST" finished-at="2022-06-04T16:05:29 IST">
+  <suite name="Suite" duration-ms="61" started-at="2022-06-07T08:59:45 IST" finished-at="2022-06-07T08:59:45 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63" started-at="2022-06-04T16:05:29 IST" finished-at="2022-06-04T16:05:29 IST">
-      <class name="testngflags.depend">
-        <test-method status="PASS" signature="login()[pri:0, instance:testngflags.depend@15d0c81b]" name="login" duration-ms="15" started-at="2022-06-04T16:05:29 IST" finished-at="2022-06-04T16:05:29 IST">
+    <test name="Test" duration-ms="61" started-at="2022-06-07T08:59:45 IST" finished-at="2022-06-07T08:59:45 IST">
+      <class name="testngflags.Prog1">
+        <test-method status="PASS" signature="method1()[pri:0, instance:testngflags.Prog1@1786dec2]" name="method1" duration-ms="7" started-at="2022-06-07T08:59:45 IST" finished-at="2022-06-07T08:59:45 IST">
           <reporter-output>
             <line>
-              <![CDATA[login to actitime]]>
+              <![CDATA[14  thread id]]>
+            </line>
+            <line>
+              <![CDATA[method1]]>
             </line>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="createContact()[pri:0, instance:testngflags.depend@15d0c81b]" name="createContact" duration-ms="0" started-at="2022-06-04T16:05:29 IST" depends-on-methods="testngflags.depend.login" finished-at="2022-06-04T16:05:29 IST">
+        </test-method> <!-- method1 -->
+        <test-method status="PASS" signature="method2()[pri:0, instance:testngflags.Prog1@1786dec2]" name="method2" duration-ms="7" started-at="2022-06-07T08:59:45 IST" finished-at="2022-06-07T08:59:45 IST">
           <reporter-output>
             <line>
-              <![CDATA[Create contact]]>
+              <![CDATA[15  thread id]]>
             </line>
-          </reporter-output>
-        </test-method> <!-- createContact -->
-        <test-method status="PASS" signature="logout()[pri:-1, instance:testngflags.depend@15d0c81b]" name="logout" duration-ms="0" started-at="2022-06-04T16:05:29 IST" depends-on-methods="testngflags.depend.createContact" finished-at="2022-06-04T16:05:29 IST">
-          <reporter-output>
             <line>
-              <![CDATA[logout from  actitime]]>
+              <![CDATA[method2]]>
             </line>
           </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- testngflags.depend -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- method2 -->
+      </class> <!-- testngflags.Prog1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
