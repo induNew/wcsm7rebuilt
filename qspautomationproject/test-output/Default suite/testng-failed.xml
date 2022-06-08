@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngpack.Sumo">
+      <class name="assertionInTestng.OrangeHrmLogin">
         <methods>
-          <include name="c"/>
+          <include name="testCase"/>
+          <include name="setProperty"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- testngpack.Sumo -->
+      </class> <!-- assertionInTestng.OrangeHrmLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
