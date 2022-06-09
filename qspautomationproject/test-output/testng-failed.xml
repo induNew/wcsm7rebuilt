@@ -3,13 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assertionInTestng.OrangeHrmLogin">
+      <class name="takesScreenShotDynamically.TestCase">
         <methods>
-          <include name="testCase"/>
-          <include name="setProperty"/>
-          <include name="launchBrowser"/>
+          <include name="tearDown"/>
+          <include name="testCase5"/>
+          <include name="setUp"/>
+          <include name="testCase2"/>
+          <include name="testCase4"/>
+          <include name="testCase3"/>
+          <include name="validLogin"/>
         </methods>
-      </class> <!-- assertionInTestng.OrangeHrmLogin -->
+      </class> <!-- takesScreenShotDynamically.TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
